@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "vs-default",
+      "displayName": "VS Default",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build_Lactococcus_Lactis",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "vs-default",
+      "configurePreset": "vs-default"
+    }
+  ]
+}
