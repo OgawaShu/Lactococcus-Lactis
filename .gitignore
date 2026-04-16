@@ -1,0 +1,24 @@
+# Ignore everything at repository root
+/*
+
+# Keep this .gitignore so it can be committed
+!/.gitignore
+
+# Allow only these directories and their contents
+!/docs
+!/docs/**
+
+!/files
+!/files/**
+
+!/src
+!/src/**
+
+# Exclude files inside files/server/certs and files/server/db but keep the directory paths and a .gitkeep placeholder
+/files/server/certs/**
+!/files/server/certs/
+!/files/server/certs/.gitkeep
+
+/files/server/db/**
+!/files/server/db/
+!/files/server/db/.gitkeep
