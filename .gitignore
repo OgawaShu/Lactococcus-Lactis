@@ -1,85 +1,24 @@
-.github/
+# Ignore everything at repository root
+/*
 
-# Build directories
-/build*
-/build_
+# Keep this .gitignore so it can be committed
+!/.gitignore
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-CTestTestfile.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# Allow only these directories and their contents
+!/docs
+!/docs/**
 
-# Ninja
-.ninja_deps
-.ninja_log
-*.ninja
+!/files
+!/files/**
 
-# Visual Studio / IDE
-.vs/
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.VC.db
-*.VC.VC.opendb
-*.vcxproj.user
-*.vcxproj.filters
-*.sln
+!/src
+!/src/**
 
-# Compiled objects and binaries
-*.obj
-*.o
-*.lib
-*.a
-*.so
-*.dll
-*.exe
-*.pdb
+# Exclude files inside files/server/certs and files/server/db but keep the directory paths and a .gitkeep placeholder
+/files/server/certs/**
+!/files/server/certs/
+!/files/server/certs/.gitkeep
 
-# Logs, temporary files
-*.log
-logs/
-*.tmp
-*~
-*.swp
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Coverage / profiling
-*.gcda
-*.gcno
-*.prof
-
-# Test artifacts
-test-output/
-
-# Database files and runtime state
-/data/
-data/
-*.db
-
-# Certificates and private keys (do NOT commit private keys)
-certs/*.key
-certs/*.pfx
-certs/*.pem
-certs/*.crt
-
-# Secrets and credentials
-*.env
-secrets/
-
-# Generated single-file third-party artifacts (if built at repo root)
-*.zip
-*.tar.gz
-
-# Keep source, headers, CMakeLists.txt, CMakePresets.json, docs, scripts, and vendored third_party
-# (Do not ignore src/ or src/third_party unless you explicitly want to exclude a vendored library)
-
-# Exclude documentation from commits
-docs/
+/files/server/db/**
+!/files/server/db/
+!/files/server/db/.gitkeep

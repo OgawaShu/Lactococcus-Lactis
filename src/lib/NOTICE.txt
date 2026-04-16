@@ -1,0 +1,2 @@
+Place third-party libraries here. Download cpp-httplib single-header implementation into this directory as `httplib.h`.
+cpp-httplib is MIT-licensed; review license at https://github.com/yhirose/cpp-httplib/blob/master/LICENSE
