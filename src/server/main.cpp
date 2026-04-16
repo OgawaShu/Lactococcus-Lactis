@@ -11,7 +11,7 @@
 #include <map>
 #include <vector>
 
-#include "../lib/httplib.h"
+#include <httplib/httplib.h>
 #include "app/App.h"
 
 int main(int argc, char **argv) {
