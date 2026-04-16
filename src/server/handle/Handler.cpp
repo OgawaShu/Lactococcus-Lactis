@@ -1,6 +1,6 @@
 #include "Handler.h"
-#include "../../common/JsonUtils.h"
-#include "../../lib/nlohmann/json.hpp"
+#include <JsonUtils.h>
+#include <nlohmann/json.hpp>
 #include <sstream>
 
 // JSON escaping provided by common::jsonEscape

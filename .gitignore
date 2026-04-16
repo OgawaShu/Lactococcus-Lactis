@@ -7,12 +7,16 @@
 # Allow only these directories and their contents
 !/docs
 !/docs/**
+/docs/vcpkg-integration.md
 
 !/files
 !/files/**
 
 !/src
 !/src/**
+
+!/lib
+
 
 # Exclude files inside files/server/certs and files/server/db but keep the directory paths and a .gitkeep placeholder
 /files/server/certs/**

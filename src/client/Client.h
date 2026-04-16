@@ -26,6 +26,7 @@ private:
     std::string config_path_;
     std::string server_url_;
     std::string storage_path_;
+    std::string ca_cert_path_;
 
     // Helper: generate hex string
     static std::string genHex(size_t n);

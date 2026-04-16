@@ -5,7 +5,7 @@
 #include <ctime>
 #include <iomanip>
 #ifdef HAVE_SQLITE3
-#include "../../lib/sqlite/sqlite3.h"
+#include <sqlite/sqlite3.h>
 #endif
 // avoid std::filesystem for compatibility with older MSVC toolset
 #include <direct.h>

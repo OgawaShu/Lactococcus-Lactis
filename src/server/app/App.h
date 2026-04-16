@@ -4,7 +4,8 @@
 #include <string>
 #include <map>
 
-#include "../lib/httplib.h"
+#define CPPHTTPLIB_OPENSSL_SUPPORT
+#include <httplib/httplib.h>
 #include "../database/DatabaseManager.h"
 #include "../auth/Session.h"
 #include "../auth/SessionManager.h"

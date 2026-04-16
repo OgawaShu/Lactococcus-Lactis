@@ -36,6 +36,7 @@ App::App(const std::string &cert, const std::string &key)
     // Notify successful database initialization
     std::cout << "Database initialized: " << dbpath << "\n";
 
+    // Use SSLServer for TLS. Requires cpp-httplib built with OpenSSL support and linking OpenSSL.
     svr = std::make_unique<httplib::SSLServer>(cert_path.c_str(), key_path.c_str());
     if (!svr->is_valid()) {
         throw std::runtime_error("SSLServer init failed (invalid cert/key or OpenSSL error)");
