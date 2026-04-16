@@ -1,2 +1,23 @@
 Place third-party libraries here. Download cpp-httplib single-header implementation into this directory as `httplib.h`.
 cpp-httplib is MIT-licensed; review license at https://github.com/yhirose/cpp-httplib/blob/master/LICENSE
+
+
+Third-party libraries included:
+
+- cpp-httplib
+  - Version: 0.42.0
+  - License: MIT
+  - License file: `src/lib/httplib/LICENSE`
+  - Source: https://github.com/yhirose/cpp-httplib
+
+- nlohmann/json
+  - Version: 3.12.0
+  - License: MIT
+  - License file: `src/lib/nlohmann/LICENSE`
+  - Source: https://github.com/nlohmann/json
+
+- SQLite
+  - Version: 3.53.0 (amalgamation)
+  - License: Public domain / blessing
+  - License file: `src/lib/sqlite/LICENSE`
+  - Source: https://www.sqlite.org
